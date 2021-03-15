@@ -288,6 +288,39 @@ body section.gallery div.row div.col-lg-12 .wedding-video:hover {
           transform: scale(1.1);
 }
 
+body section.event h1.acara {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 4vh;
+}
+
+body section.event h2.date-event {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+body section.event h2.akad,
+body section.event h2.resepsi {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 5vh;
+}
+
+body section.event div.card {
+  border: none !important;
+  background-color: transparent !important;
+  margin-bottom: 3vh;
+}
+
+body section.event div.card div.card-body {
+  padding: 0.25rem;
+  font-weight: 650;
+}
+
 body section.location {
   padding-top: 5vh;
   padding-bottom: 10vh;
@@ -360,6 +393,137 @@ body section.greeting div.row div.label-jam h2,
 body section.greeting div.row div.label-menit h2,
 body section.greeting div.row div.label-detik h2 {
   font-size: 2.5rem !important;
+}
+
+body section.comment h1.comment {
+  font-family: "Dancing Script", cursive;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+body section.comment h2.list-ucapan {
+  margin-bottom: 5vh;
+}
+
+body section.comment div.card {
+  margin-bottom: 15vh;
+  height: 50vh;
+}
+
+body section.comment div.card div.card-body {
+  overflow: auto;
+  background-color: #efefef !important;
+}
+
+body section.comment div.card div.card-body div.chat-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-r .sp {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-r .mess {
+  max-width: 47%;
+  background-color: #F7FCF6;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-r .mess span.nama {
+  font-weight: 650;
+  font-size: 1rem;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-r .mess p {
+  word-break: break-all;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-r .mess .check {
+  float: right;
+  color: #34b7f1;
+  font-size: .7rem;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-r .mess .check span {
+  color: #888 !important;
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-r .mess-r {
+  background-color: #E2FFC7;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-r .mess-r p i.fa-user {
+  width: 20px;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-l {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-l .sp {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-l .mess {
+  max-width: 47%;
+  background-color: #F7FCF6;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-l .mess span.nama {
+  font-weight: 650;
+  font-size: 1rem;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-l .mess p {
+  word-break: break-all;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-l .mess .check {
+  float: right;
+  color: #34b7f1;
+  font-size: .7rem;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-l .mess .check span {
+  color: #888 !important;
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-l .mess-r {
+  background-color: #E2FFC7;
+}
+
+body section.comment div.card div.card-body div.chat-box div.chat-l .mess-r p i.fa-user {
+  width: 20px;
 }
 
 body button.lagu {
@@ -463,6 +627,9 @@ body footer.navigasi div a {
   section.location h2.link-head {
     font-size: 2rem !important;
   }
+  section.greeting {
+    padding-bottom: 5vh !important;
+  }
   section.greeting div.col-md-12 h1.greetings {
     font-size: 2rem !important;
   }
@@ -540,6 +707,9 @@ body footer.navigasi div a {
   section.couple div.row div.col-lg-4 div.card img.wanita {
     max-width: 60%;
   }
+  section.gallery div.row {
+    margin-top: 0 !important;
+  }
 }
 
 @media only screen and (max-width: 577px) {
@@ -552,6 +722,9 @@ body footer.navigasi div a {
   }
   section.home div#particles-js {
     height: 200vh;
+  }
+  section.gallery div.row {
+    margin-top: 0px !important;
   }
   section.gallery div.row a.wedding-video {
     width: 100% !important;

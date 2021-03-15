@@ -252,6 +252,41 @@ body {
 		}
 	}
 
+	section.event {
+		h1.acara {
+			font-family: "Dancing Script", cursive;
+			font-weight: 700;
+			text-align: center;
+			margin-top: 4vh;
+		}
+
+		h2.date-event {
+			font-family: "Dancing Script", cursive;
+			font-weight: 700;
+			text-align: center;
+			margin-top: 5vh;
+		}
+
+		h2.akad,
+		h2.resepsi {
+			font-family: "Dancing Script", cursive;
+			font-weight: 700;
+			text-align: center;
+			margin-top: 5vh;
+		}
+
+		div.card {
+			border: none !important;
+			background-color: transparent !important;
+			margin-bottom: 3vh;
+
+			div.card-body {
+				padding: 0.25rem;
+				font-weight: 650;
+			}
+		}
+	}
+
 	section.location {
 		padding-top: 5vh;
 		padding-bottom: 10vh;
@@ -316,6 +351,135 @@ body {
 				margin-right: 15px;
 				h2 {
 					font-size: 2.5rem !important;
+				}
+			}
+		}
+	}
+
+	section.comment {
+		h1.comment {
+			font-family: "Dancing Script", cursive;
+			font-weight: 700;
+			text-align: center;
+			margin-bottom: 5vh;
+		}
+
+		h2.list-ucapan {
+			margin-bottom: 5vh;
+		}
+
+		div.card {
+			margin-bottom: 15vh;
+			height: 50vh;
+
+			div.card-body {
+				overflow: auto;
+				background-color: #efefef !important;
+
+				div.chat-box {
+					flex: 1;
+					
+					div.chat-r {
+						display: flex;
+						
+						.sp {
+							flex: 1;
+						}
+
+						.mess {
+							max-width: 47%;
+							background-color: #F7FCF6;
+							padding: 10px;
+							border-radius: 10px;
+							margin: 20px 0px;
+							cursor: pointer;
+
+							span.nama {
+								font-weight: 650;
+								font-size: 1rem;
+							}
+
+							p {
+								word-break: break-all;
+								font-size: 1rem;
+								text-align: justify;
+							}
+
+							.check {
+								float: right;
+								color: #34b7f1;
+								font-size: .7rem;
+
+								span {
+									color: #888 !important;
+									font-size: .7rem;
+									font-weight: 700;
+								}
+							}
+						}
+
+						.mess-r {
+							background-color: #E2FFC7;
+
+							p {
+
+								i.fa-user {
+									width: 20px;
+								}
+							}
+						}
+					}
+
+					div.chat-l {
+						display: flex;
+						
+						.sp {
+							flex: 1;
+						}
+
+						.mess {
+							max-width: 47%;
+							background-color: #F7FCF6;
+							padding: 10px;
+							border-radius: 10px;
+							margin: 20px 0px;
+							cursor: pointer;
+
+							span.nama {
+								font-weight: 650;
+								font-size: 1rem;
+							}
+
+							p {
+								word-break: break-all;
+								font-size: 1rem;
+								text-align: justify;
+							}
+
+							.check {
+								float: right;
+								color: #34b7f1;
+								font-size: .7rem;
+
+								span {
+									color: #888 !important;
+									font-size: .7rem;
+									font-weight: 700;
+								}
+							}
+						}
+
+						.mess-r {
+							background-color: #E2FFC7;
+
+							p {
+
+								i.fa-user {
+									width: 20px;
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -463,6 +627,8 @@ body {
 	}
 
 	section.greeting {
+		padding-bottom: 5vh !important;
+
 		div.col-md-12 {
 			h1.greetings {
 				font-size: 2rem !important;
@@ -547,6 +713,12 @@ body {
 			}
 		}
 	}
+
+	section.gallery {
+		div.row {
+			margin-top: 0 !important;
+		}
+	}
 }
 
 @media only screen and (max-width: 577px) {
@@ -569,6 +741,7 @@ body {
 
 	section.gallery {
 		div.row {
+			margin-top: 0px !important;
 			a.wedding-video {
 				width: 100% !important;
 				height: 33vh !important;
