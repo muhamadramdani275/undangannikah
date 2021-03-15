@@ -21,9 +21,29 @@ class Undangan extends CI_Controller
      */
     public function index($namatamu = "")
     {
+        date_default_timezone_set("Asia/Jakarta");
+        $date = '2021-05-30';
+        $bulan = [
+            1 => 'Januari',
+            'Februari',
+            'Maret',
+            'April',
+            'Mei',
+            'Juni',
+            'Juli',
+            'Agustus',
+            'September',
+            'Oktober',
+            'November',
+            'Desember'
+        ];
+        $pecah = explode('-', $date);
+        $tgl = $pecah[2] . ' ' . $bulan[(int)$pecah[1]] . ' ' . $pecah[0];
+
         $data = [
-            'title'     => 'Wedding Invitation | Obi dan Riah',
-            'namatamu'  => str_replace('_', ' ', $namatamu),
+            'title'         => 'Wedding Invitation | Obi dan Riah',
+            'namatamu'      => str_replace('_', ' ', $namatamu),
+            'tanggalchat'   => $tgl,
         ];
 
         $this->load->view('template/header', $data);
