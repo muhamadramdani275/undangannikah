@@ -167,25 +167,44 @@
         </div>
     </div>
 </section>
-<section class="container-fluid location animasi" id="location">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="text-center location">Location</h1>
-        </div>
-    </div>
 
-    <div class="row d-flex justify-content-center">
-        <div class="col-lg-6 maps" id="map">
-
+<section class="event container-fluid animasi" id="event">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="acara text-center">Events</h1>
+                <h2 class="date-event text-center">Ahad, 30 Mei 2021</h2>
+            </div>
         </div>
-    </div>
-    <div class="row d-flex justify-content-center">
-        <div class="col-lg-6 text-center">
-            <h2 class="link-head">Link Google Maps</h2>
-            <a href="https://goo.gl/maps/viM4ovPQUcwTNaZ88" target="_blank" class="link-lokasi btn btn-primary">Klik disini</a>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="akad text-center">Akad Nikah</h2>
+                <div class="card">
+                    <div class="card-body text-center">
+                        Pukul 09.00 WIB s/d Selesai
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h2 class="resepsi text-center">Resepsi</h2>
+                <div class="card">
+                    <div class="card-body text-center">
+                        Pukul 13.00 s/d 16.00 WIB
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <p class="lokasi text-center">
+                    <b>Bertempat di kediaman mempelai wanita.</b> <br>
+                    Kp. Mekarjaya Desa Cikampek Utara Kec. Kotabaru Kab. Karawang
+                </p>
+            </div>
         </div>
     </div>
 </section>
+
 <section class="container-fluid greeting animasi" id="greeting">
     <div class="row">
         <div class="col-md-12">
@@ -217,6 +236,78 @@
         <div class="col-1"></div>
     </div>
 </section>
+
+<section class="container-fluid location animasi" id="location">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center location">Location</h1>
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-6 maps" id="map">
+
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-6 text-center">
+            <h2 class="link-head">Link Google Maps</h2>
+            <a href="https://goo.gl/maps/viM4ovPQUcwTNaZ88" target="_blank" class="link-lokasi btn btn-primary">Klik disini</a>
+        </div>
+    </div>
+</section>
+
+<section class="comment container-fluid animasi" id="comment">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="comment text-center">Kirim Ucapan kepada Mempelai</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="list-ucapan text-center">Ucapan dari para tamu.</h2>
+            <div class="card">
+                <div class="card-body">
+                    <div class="chat-box">
+                        <!-- Bubble left -->
+                        <div class="chat-l">
+                            <div class="mess">
+                                <span class="nama">Uu Padilah</span><br>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, nemo.
+                                </p>
+                                <div class="check">
+                                    <span><?= $tanggalchat ?> 21:00</span>
+                                </div>
+                            </div>
+                            <div class="sp"></div>
+                        </div>
+
+                        <!-- Bubble right -->
+                        <div class="chat-r">
+                            <div class="sp"></div>
+                            <div class="mess mess-r">
+                                <span class="nama">Muhamad Ramdani H_</span><br>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, nemo.
+                                </p>
+                                <div class="check">
+                                    <span>15 Maret 2021 22:00</span>
+                                    <i class="fas fa-check"></i><i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+
+        </div>
+    </div>
+</section>
+
+
 <script>
     //Countdown
     var countDate = new Date('May 30 2021 00:00:00').getTime();
